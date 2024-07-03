@@ -175,7 +175,7 @@ class env_conductores_vehiculos(models.Model):
         unique_together = (('conductor_id', 'vehiculo_id'),)
         db_table = 'env_conductores_vehiculos'
 
-class env_envio(models.Model):
+class env_envio(models.Model): 
     descripcion = models.CharField(max_length=50)
     fecha_envio = models.DateField(null=True, blank=True)
     fecha_entrega = models.DateField(null=True, blank=True)
