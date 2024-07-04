@@ -14,11 +14,9 @@ logger = logging.getLogger(__name__)
 
 # Create your views here.
 
-class EmployeeList(APIView):
-    def get(self, request):
-        queryset = Employee.objects.all()
-        data = EmployeeSerializer(queryset, many=True).data
-        return Response(data)
+class EmployeeList(generics.ListAPIView):
+    queryset = Employee.objects.all()
+    serializer_class = EmployeeSerializer
 
 class ProfileList(APIView):
     serializer_class = ProfileSerializer

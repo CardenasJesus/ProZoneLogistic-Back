@@ -1,0 +1,10 @@
+Watching for file changes with StatReloader
+user_serializer errors: {'username': [ErrorDetail(string='A user with that username already exists.', code='unique')]}
+Bad Request: /api/v1/api/employees/register/
+[04/Jul/2024 00:50:30] "POST /api/v1/api/employees/register/ HTTP/1.0" 400 58
+[04/Jul/2024 00:51:36] "POST /api/v1/api/employees/register/ HTTP/1.0" 201 209
+Method Not Allowed: /api/v1/api/token/
+[04/Jul/2024 00:54:41] "GET /api/v1/api/token/ HTTP/1.0" 405 12455
+[04/Jul/2024 00:54:56] "POST /api/v1/api/token/ HTTP/1.0" 200 13508
+[04/Jul/2024 00:55:39] "POST /api/v1/api/token/ HTTP/1.0" 200 725
+[04/Jul/2024 01:03:11] "POST /api/v1/api/token/ HTTP/1.0" 200 725

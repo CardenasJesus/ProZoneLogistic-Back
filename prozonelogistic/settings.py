@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-4t9dx9b4o6xbnhk+=u2isyi=b!7j7@-_$3sq9+3mapk63r&2az
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.prozonelogistic.site', 'prozonelogistic.site', '127.0.0.1']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "corsheaders",  
     'backProzone',
     'rest_framework_simplejwt.token_blacklist',
+    'api'
 ]
 
 MIDDLEWARE = [
@@ -58,6 +59,11 @@ ROOT_URLCONF = 'prozonelogistic.urls'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://prozonelogistic.site",
+    "https://www.prozonelogistic.site",
+    "http://192.168.35.45:5173",
+    "http://192.168.35.45",
+
 ]
 
 
@@ -87,8 +93,8 @@ DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'prozonelogistic',
-        'USER': 'postgres',  # Usar minúsculas aquí
-        'PASSWORD': 'JACZ_PLAY18',
+        'USER': 'admin',  # Usar minúsculas aquí
+        'PASSWORD': 'admin12345',
         'HOST': 'localhost',
         'PORT': '5432',
     }
